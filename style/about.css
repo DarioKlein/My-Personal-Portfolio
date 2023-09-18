@@ -1,0 +1,161 @@
+/*  Sobre mim */
+
+.home-sci {
+  position: absolute;
+  bottom: 4rem;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home-sci a:hover {
+  color: var(--bg-color);
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
+
+.home-imgHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-imgHover img{
+  width: 90%;
+  height: 75%;
+}
+
+.home-imgHover:hover {
+  background: var(--bg-color);
+  opacity: 0.8;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--second-bg-color);
+  padding-bottom: 6rem;
+}
+
+.heading {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#about h2 {
+  color: var(--second-txt-color);
+}
+
+#about span {
+  color: var(--text-color);
+ }
+
+span {
+  color: var(--main-color);
+}
+
+.about-img {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 90%;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+}
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid #ff7b0000;
+  border-bottom: 0.2rem solid #ff7b0000;
+  border-left: 0.2rem solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+  animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.about-content {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.about-content p {
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.about-content h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.6rem;
+  margin: 2rem 0 2rem;
+  margin-top: 0;
+}
+
+.btn-box.btns {
+  display: inline-block;
+  width: 15rem;
+}
+
+.btn-box.btns a::before {
+  background-color: var(--bg-color);
+}
