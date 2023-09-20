@@ -7,7 +7,7 @@
 
   .home-imgHover img {
     width: 90%;
-    height: 40%;
+    height: 70%;
   }
 }
 
@@ -29,16 +29,10 @@
   }
 
   .home-imgHover img {
-    width: 90%;
-    height: 30%;
+    width: 80%;
+    height: 60%;
   }
 }
-
-@media (max-width: 850px) {
-  .animate.home-img {
-    width: 55%;
-  }
- }
 
 @media (max-width: 768px) {
   .header {
@@ -100,22 +94,9 @@
   }
 
   .home-imgHover {
-    pointer-events: none;
-    background: var(--bg-color);
-    opacity: 0.6;
-  }
-
-  .home-imgHover img {
-    width: 100%;
-    height: 70%;
-  }
-}
-
-@media (max-width: 600px) {
-  .home-imgHover img {
     display: none;
   }
- }
+}
 
 @media (max-width: 520px) {
   html {

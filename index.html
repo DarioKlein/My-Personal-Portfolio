@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="style/home.css" />
     <link rel="stylesheet" href="style/skills.css" />
     <link rel="stylesheet" href="style/responsive.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/dario.png">
+    <link rel="stylesheet" href="style/projects.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/dario.png" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     <!-- header and navbar -->
     <header class="header">
       <a href="#" class="logo"
-        >Dário Klein. <span class="animate" style="--i: 1"></span
+        >Dário.<span class="animate" style="--i: 1"></span
       ></a>
 
       <div class="bx bx-menu" id="menu-icon">
@@ -35,6 +36,7 @@
         <a href="#about">Sobre Mim</a>
         <a href="#education">Currículo</a>
         <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>
 
         <span class="active-nav"></span>
@@ -63,16 +65,24 @@
         </p>
 
         <div class="btn-box">
-          <a href="#" class="btn">Contate-me</a>
-          <a href="#" class="btn">Fale Comigo</a>
+          <a href="#contact" class="btn">Contate-me</a>
+          <a href="#projects" class="btn">Projetos</a>
           <span class="animate" style="--i: 5"></span>
         </div>
       </div>
 
       <div class="home-sci">
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
+        <a target="_blank" href="https://www.instagram.com/darioklein_ab/"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/dário-klein-7a49ab281/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/DarioKlein"
+          ><i class="bx bxl-github"></i
+        ></a>
         <span class="animate" style="--i: 6"></span>
       </div>
 
@@ -97,12 +107,15 @@
       </div>
 
       <div class="about-content">
-        <h3>
-          Desenvolvedor Front-end<span
-            class="animate scroll"
-            style="--i: 3"
-          ></span>
-        </h3>
+        <div class="abilities">
+          <img src="assets/icons/js.svg" alt="">
+          <img src="assets/icons/php.svg" alt="">
+          <img src="assets/icons/sql.svg" alt="">
+          <img src="assets/icons/html.svg" alt="">
+          <img src="assets/icons/css.svg" alt="">
+          <img src="assets/icons/node.svg" alt="">
+          <span class="animate scroll" style="--i: 3"></span>
+        </div>
         <p>
           Nascido em Cândido Mota no ano de 2006, me interessei pela área de
           programação aos 15 anos de idade. Após ingreessar no curso técnico da
@@ -117,7 +130,7 @@
         </p>
 
         <div class="btn-box btns">
-          <a href="#" class="btn">Leia Mais</a>
+          <a href="#education" class="btn">Veja Mais</a>
           <span class="animate scroll" style="--i: 5"></span>
         </div>
       </div>
@@ -168,21 +181,6 @@
                 </p>
               </div>
             </div>
-
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>2021 - 2023
-                </div>
-                <h3>Curso de Inglês - Education Center</h3>
-                <p>
-                  Curso básico de inglês voltado para a compreensão e
-                  comunicação em Inglês, nesse curso vimos a apresentação
-                  básica, verbo To be, Números, entrevistas, passado, presente e
-                  futuro, singular e plural, entre outros.
-                </p>
-              </div>
-            </div>
             <span class="animate scroll" style="--i: 3"></span>
           </div>
         </div>
@@ -203,6 +201,19 @@
                   TypeScript, Node.js, Banco de dados relacionais, lógica de
                   programação, git, github e deploying de uma aplicação final
                   chamada Devlinks.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i>2023</div>
+                <h3>Curso de Inglês - Education Center</h3>
+                <p>
+                  Curso básico de inglês voltado para a compreensão e
+                  comunicação em Inglês, nesse curso vimos a apresentação
+                  básica, verbo To be, Números, entrevistas, passado, presente e
+                  futuro, singular e plural, entre outros.
                 </p>
               </div>
             </div>
@@ -231,22 +242,34 @@
           <div class="skills-box">
             <div class="skills-content">
               <div class="progress">
-                <h3>HTML <span>90%</span></h3>
+                <h3>
+                  <p>HTML <img src="assets/icons/html.svg" alt="" /></p>
+                  <span>90%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>CSS <span>95%</span></h3>
+                <h3>
+                  <p>CSS <img src="assets/icons/css.svg" alt="" /></p>
+                  <span>95%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>JavaScript <span>45%</span></h3>
+                <h3>
+                  <p>JavaScript <img src="assets/icons/js.svg" alt="" /></p>
+                  <span>45%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>PHP <span>60%</span></h3>
+                <h3>
+                  <p>PHP <img src="assets/icons/php.svg" alt="" /></p>
+                  <span>60%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
             </div>
@@ -262,28 +285,122 @@
           <div class="skills-box">
             <div class="skills-content">
               <div class="progress">
-                <h3>Banco de Dados SQL <span>70%</span></h3>
+                <h3>
+                  <p>
+                    Banco de dados SQL <img src="assets/icons/sql.svg" alt="" />
+                  </p>
+                  <span>70%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>Web Design <span>30%</span></h3>
+                <h3>
+                  <p>Web Design <img src="assets/icons/design.svg" alt="" /></p>
+                  <span>30%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>Trabalho em Equipe <span>82%</span></h3>
+                <h3>
+                  <p>
+                    Trabalho em Equipe
+                    <img src="assets/icons/team.svg" alt="" />
+                  </p>
+                  <span>82%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
 
               <div class="progress">
-                <h3>Inglês <span>41%</span></h3>
+                <h3>
+                  <p>Inglês <img src="assets/icons/eua.svg" alt="" /></p>
+                  <span>41%</span>
+                </h3>
                 <div class="bar"><span></span></div>
               </div>
             </div>
             <span class="animate scroll" style="--i: 6"></span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <section class="projects" id="projects">
+      <h2 class="heading">
+        Meus<span> Projetos</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="grid-projetc">
+        <div class="cards" id="forca">
+          <img class="imagens" src="assets/forca.png" alt="" />
+          <span class="conteudo-cards" id="teste">
+            <h4>JOGO DA FORCA</h4>
+            <p>
+              Feito em HTML, CSS e JavaScript. Produzido com intuito de conhecer
+              mais da tag Canvas do HTML.
+            </p>
+          </span>
+        </div>
+        <div class="cards" id="devlinks">
+          <img class="imagens" src="assets/links.png" alt="" />
+          <span class="conteudo-cards" id="teste"
+            ><h4>DEVLINKS</h4>
+            <p>
+              Feito em HTML, CSS e JavaScript. Projeto da Rocketseat
+              desenvolvido para ser uma espécie de linkthree dos programadores.
+            </p></span
+          >
+        </div>
+        <div class="cards" id="shorts">
+          <img class="imagens" src="assets/shorts.png" alt="" />
+          <span class="conteudo-cards" id="teste"
+            ><h4>SHORTS SUMMARY</h4>
+            <p>
+              Feito em HTML, CSS, Node.js e IA. Projeto do NLW IA da rocketseat,
+              o site consiste em um site onde você insere o link de um shorts do
+              youtube e a IA capta o aúdio do vídeo, transforma em texto, resume
+              e devolve para o usuário.
+            </p></span
+          >
+        </div>
+        <div class="cards" id="gc">
+          <img class="imagens" src="assets/gc.png" alt="" />
+          <span class="conteudo-cards" id="teste"
+            ><h4>GAMING CORE</h4>
+            <p>
+              Feito em HTML, CSS, JavaScript, PHP e MySQL. Site desenvolvido
+              pela minha equipe do TCC. O site é uma rede social gamer, voltado
+              para interação entre gamers.
+            </p></span
+          >
+        </div>
+        <div class="cards" id="crud">
+          <img class="imagens" src="assets/crud.png" alt="" />
+          <span class="conteudo-cards" id="teste"
+            ><h4>CRUD</h4>
+            <p>
+              Feito em HTML, CSS e JavaScript. Um projeto simples apenas para
+              fixar os conteúdos de lógica de programação no JavaScript.
+            </p></span
+          >
+        </div>
+        <div class="cards" id="portfolio">
+          <img class="imagens" src=".github/imgProjeto.png" alt="" />
+          <span class="conteudo-cards" id="teste"
+            ><h4>PORTFÓLIO</h4>
+            <p>
+              Feito em HTML, CSS e JavaScript. Meu porfólio pessoal para
+              apresentar quem sou, o que faço, minhas habilidades e projetos que
+              já desenvolvi ao longo da minha carreira.
+            </p></span
+          >
+        </div>
+        <span class="animate scroll" style="--i: 3"></span>
       </div>
     </section>
 

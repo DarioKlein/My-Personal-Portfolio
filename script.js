@@ -46,3 +46,36 @@ window.onscroll = () => {
 
   footer.classList.add('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight)
 }
+
+//  Hrefs dos projetos
+
+const forca = document.getElementById("forca")
+const devlinks = document.getElementById("devlinks")
+const shorts = document.getElementById("shorts")
+const gc = document.getElementById("gc")
+const crud = document.getElementById("crud")
+const portfolio = document.getElementById("portfolio")
+
+forca.addEventListener("click", () => {
+  window.location.href = "https://jogo-da-forca-coral.vercel.app" // Substitua com o URL desejado
+})
+
+devlinks.addEventListener("click", () => {
+  window.location.href = "https://darioklein.github.io/Devlinks/" // Substitua com o URL desejado
+})
+
+shorts.addEventListener("click", () => {
+  window.location.href = "https://github.com/DarioKlein/nlwIA" // Substitua com o URL desejado
+})
+
+gc.addEventListener("click", () => {
+  window.location.href = "https://github.com/DarioKlein/TCC" // Substitua com o URL desejado
+})
+
+crud.addEventListener("click", () => {
+  window.location.href = "https://github.com/DarioKlein/portfolio" // Substitua com o URL desejado
+})
+
+portfolio.addEventListener("click", () => {
+  window.location.href = "https://github.com/DarioKlein/portfolio" // Substitua com o URL desejado
+})
