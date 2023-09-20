@@ -12,6 +12,7 @@
   align-items: center;
   z-index: 100;
   transition: .3s;
+  border-bottom: 0.15rem solid var(--second-bg-color);
 }
 
 .header.sticky{
