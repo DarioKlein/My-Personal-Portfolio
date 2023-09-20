@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Portfólio é um site feito por mim, para divulgar meu currículo, minhas formações e projetos na área de TI.
 
-- [Acesse o projeto finalizado, online](https://portfolio-roan-one-74.vercel.app/#projects)
+- [Acesse o projeto finalizado, online](https://portfolio-roan-one-74.vercel.app/#home)
 
 ## Créditos
 
