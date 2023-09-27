@@ -7,7 +7,6 @@
 
   .home-imgHover img {
     width: 90%;
-    height: 70%;
   }
 }
 
@@ -30,7 +29,6 @@
 
   .home-imgHover img {
     width: 80%;
-    height: 60%;
   }
 }
 
@@ -163,5 +161,7 @@
 
   .home-content p {
     max-width: 35rem;
+    transform: trans;
   }
 }
+

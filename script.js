@@ -28,8 +28,6 @@ window.onscroll = () => {
       })
       // Active sections for animation on scroll
       sec.classList.add('show-animate')
-    } else {
-      sec.classList.remove("show-animate")
     }
   })
 
