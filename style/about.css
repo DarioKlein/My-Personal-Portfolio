@@ -59,11 +59,11 @@
 
 .home-imgHover img{
   width: 90%;
+  transition: all 0.5s ease-in-out;
 }
 
 .home-imgHover:hover {
   background: var(--bg-color);
-  opacity: 0.8;
 }
 
 .about {
@@ -148,7 +148,7 @@ span {
 
 .about-content {
   text-align: center;
-  color: var(--text-color);
+  color: var(--second-txt-color);
 }
 
 .about-content p {

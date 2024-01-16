@@ -4,7 +4,7 @@ let menuIcon = document.querySelector("#menu-icon")
 let navbar = document.querySelector(".navbar")
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x")
-  navbar.classList.toggle('active')
+  navbar.classList.toggle("active")
 }
 
 // scroll sections
@@ -27,7 +27,7 @@ window.onscroll = () => {
           .classList.add("active")
       })
       // Active sections for animation on scroll
-      sec.classList.add('show-animate')
+      sec.classList.add("show-animate")
     }
   })
 
@@ -36,13 +36,16 @@ window.onscroll = () => {
   header.classList.toggle("sticky", window.scrollY > 100)
 
   // Remove toggle icon and navbar when click navbar links (scroll)
-   menuIcon.classList.remove("bx-x")
-   navbar.classList.remove("active")
+  menuIcon.classList.remove("bx-x")
+  navbar.classList.remove("active")
 
   //  animation footer on scroll
-  let footer = document.querySelector('footer');
+  let footer = document.querySelector("footer")
 
-  footer.classList.add('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight)
+  footer.classList.add(
+    "show-animate",
+    this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
+  )
 }
 
 //  Hrefs dos projetos
@@ -76,4 +79,22 @@ crud.addEventListener("click", () => {
 
 portfolio.addEventListener("click", () => {
   window.location.href = "https://github.com/DarioKlein/portfolio" // Substitua com o URL desejado
+})
+
+const img = document.querySelector("#img-hover")
+
+img.addEventListener("mouseover", () => {
+  img.style.opacity = "0.3"
+  setTimeout(() => {
+    img.src = "./assets/newDario2.png"
+    img.style.opacity = "1"
+   }, 400)
+})
+
+img.addEventListener("mouseout", () => {
+   img.style.opacity = "0.3"
+   setTimeout(() => {
+     img.src = "./assets/newDario.png"
+     img.style.opacity = "1"
+   }, 400)
 })

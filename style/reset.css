@@ -16,11 +16,11 @@
 }
 
 :root {
-  --bg-color: #ffebeb;
-  --second-bg-color: #ffbc3f;
+  --bg-color: #fff;
+  --second-bg-color: rgb(192, 11, 53);
   --text-color: #000000;
-  --main-color: #ff7b00;
-  --second-txt-color: #ffffff;
+  --main-color: rgb(255, 65, 108);
+  --second-txt-color: #fff;
 }
 
 html {
@@ -30,4 +30,14 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 1rem; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 6px;
+  border: 0.2rem solid #fff; 
 }

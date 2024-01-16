@@ -86,10 +86,16 @@
 
 .education-content .content h3 {
   font-size: 1.4rem;
+  transition: .3s ease-in-out;
 }
 
 .education .content p {
   font-size: 1.1rem;
   padding-top: 0.5rem;
   text-align: justify;
+  transition: .3s ease-in-out;
+}
+
+.education .content:hover p, .education-content .content:hover h3 {
+  color: var(--second-txt-color)
 }
